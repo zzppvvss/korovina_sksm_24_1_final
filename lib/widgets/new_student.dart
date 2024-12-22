@@ -131,7 +131,7 @@ class _NewStudentState extends ConsumerState<NewStudent> {
                 DropdownButton(
                     value: _selectedDepartment,
                     items: availableDepartments
-                        .asMap() // Convert list to map with indexes
+                        .asMap() 
                         .map(
                           (index, department) {
                             return MapEntry(
@@ -162,7 +162,7 @@ class _NewStudentState extends ConsumerState<NewStudent> {
                       if (newValue != null) {
                         setState(() {
                           _selectedDepartment =
-                              newValue; // Update the selected department and rebuild
+                              newValue; 
                         });
                       }
                     }),
