@@ -17,14 +17,14 @@ class StudentsItem extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final availableDepartments = ref.watch(departmentsProvider);
-    // Find the department for this student
+   
     final department = availableDepartments.firstWhere(
       (department) => department.id == student.departmentId,
       orElse: () => const Department(
           id: '',
           name: 'Unknown',
           color: Colors.grey,
-          icon: Icons.error), // Fallback if department is not found
+          icon: Icons.error), 
     );
     return InkWell(
       onTap: () => onEditStudent(student),
