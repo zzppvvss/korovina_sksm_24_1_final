@@ -20,7 +20,7 @@ class Student {
       : id = id ?? const Uuid().v4();
 
   final String id;
-  final String firebaseKey; // Add this field
+  final String firebaseKey;
   final String firstName;
   final String lastName;
   final String departmentId;
