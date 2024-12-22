@@ -94,7 +94,7 @@ class Students extends ConsumerWidget {
             child: isLoading
                 ? const Center(
                     child:
-                        CircularProgressIndicator()) // Show loading indicator
+                        CircularProgressIndicator()) 
                 : StudentsList(
                     students: students,
                     onRemoveStudent: _removeStudent,
