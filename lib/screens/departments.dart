@@ -14,7 +14,7 @@ class DepartmentsScreen extends ConsumerWidget {
     final isLoading = ref.watch(studentsProvider.notifier).isLoading;
     return isLoading
         ? const Center(
-            child: CircularProgressIndicator()) // Show loading indicator
+            child: CircularProgressIndicator())
         : Scaffold(
             body: GridView(
               padding: const EdgeInsets.all(20),
